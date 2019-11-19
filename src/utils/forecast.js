@@ -14,7 +14,8 @@ forecast = (latitude, longitude, callback) => {
                 temperature: body.currently.temperature,
                 precipProbability: body.daily.data[0].precipProbability,
                 temperatureHigh: body.daily.data[0].temperatureHigh,
-                temperatureLow: body.daily.data[0].temperatureLow
+                temperatureLow: body.daily.data[0].temperatureLow,
+                humidity: body.daily.data[0].humidity
             })
         }
     })
